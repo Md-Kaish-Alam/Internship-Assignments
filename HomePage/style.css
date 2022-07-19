@@ -1,0 +1,170 @@
+.logo {
+    text-align: center;
+    font-size: 70px;
+    color: red;
+    background: white;
+    width: 105px;
+    height: 113px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    margin-left: 45%;
+    font-family: Poppins;
+    font-weight: bold;
+justify-content: center;
+  }
+  
+.btn-outline-secondary{
+        position: relative;
+        text-align: right;
+        padding: 10px 20px 100px 20px;
+        margin-right: 0.5rem;
+        padding: 0.5rem 1.2rem;
+        top: -430px;
+      }
+      .headings {
+        color: white;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+        margin: auto;
+        font-size: 36px;
+        top: -295px;
+      }
+
+      .dropdown {
+        height: 45px;
+        width: 245px;
+        color: gray;
+        border: none;
+        border-radius: 0px;
+        font-size: 17px;
+      
+        margin-right: 21px;
+        margin-bottom: 25px;
+        float: left;
+      }
+      
+    
+  
+      .quicksearch {
+        position: absolute;
+        margin-left: 35px;
+        margin-top: -80px;
+      }
+    
+    
+      .quicksearchheading {
+        text-align: left;
+        color: #192f60;
+        font-size: 30px;
+        font-weight: bold;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        padding-left: 35px;
+        padding-bottom: 5px;
+        
+      }
+    
+      #quicksub{
+        text-align: left;
+      color: gray;
+      font-size: 18px;
+      font-weight: normal;
+      font-family: poppins;
+      padding-left: 35px;
+      padding-bottom:20px ;
+    }
+      
+    .tileContainer {
+      height: 150px;
+      width: 350px;
+      background-color: white;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      margin-left: 40px;
+      padding-bottom: 20px;
+      box-shadow: 0px 4px 7px #00000029;
+      float: left;
+    }
+    
+    .tileComponent1 {
+      width: 45%;
+      float: left;
+    }
+    
+    .tileComponent2 {
+      width: 50%;
+      float: left;
+      margin-top: 20px;
+    }
+    
+    .componentHeading {
+      text-align: left;
+      color: #192f60;
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    
+    .componentSubHeading {
+      text-align: left;
+      color:#8C96AB ;
+      font-size: 18px;
+    }
+    
+    .qs-block {
+      box-shadow: 0px 3px 6px #00000029;
+      background-color: #ffffff;
+      margin-bottom: 5px;
+
+    }
+      
+    @media only screen and (min-width: 600px) and (max-width: 1150px) {
+      .Dropdown {
+        height: 40px;
+        width: 310px;
+        color:#636F88;
+        border: none;
+        border-radius: 0px;
+        font-size: 18px;
+        opacity: 0.7;
+        margin-right: 21px;
+        margin-bottom: 25px;
+        float: left;
+      }
+    }
+      .locationselector {
+        position: relative;
+        top: -238px;
+        margin-left: 32.5%;
+        margin-right: 20%;
+        text-align: center;
+      }
+     
+    
+      .selectloc {
+        height: 40px;
+        width: 310px;
+        color:gray;
+        font-weight: bold;
+        border-left: none;
+        border-radius: 0px;
+        font-size: 15px;
+        float: left;
+        padding-left: 30px;
+      }
+    
+   
+      @media only screen and (max-width: 600px) {
+        .selectloc {
+          height: 40px;
+          width: 245px;
+          color:#636F88 ;
+          border: none;
+          border-radius: 0px;
+          font-size: 15px;
+          opacity: 0.7;
+          float: left;
+        }
+      }
