@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b7c5dd5778.js" crossorigin="anonymous"></script>
+    <title>Form Application</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* overflow: hidden; */
+            background-color: #152733;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            color: #fff;
+            padding: 10px;
+            margin: 15px auto;
+            width: 600px;
+            height: 300vh;
+            border: 3px solid white;
+            background-color: #152733;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+        }
+
+        .container .heading {
+            /* text-align: center; */
+            padding: 15px;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid #fff;
+        }
+
+        .container .heading .fa-solid {
+            margin: 10px;
+            padding: 2px;
+            font-size: 25px;
+        }
+
+        .container .subheading {
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .form-control {
+            display: block;
+        }
+
+        .form-control {
+            width: 97%;
+            height: 32px;
+            margin: 8px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #152733;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .fldgen {
+            height: 70px;
+            padding: 10px;
+        }
+
+        .fldadd {
+            padding: 10px;
+        }
+
+        textarea {
+            background-color: #fff;
+            padding: 10px;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .course-options {
+            width: 97%;
+            height: 40px;
+            margin: 8px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #152733;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        .topic {
+            color: #000;
+            background-color: #fff;
+        }
+
+        .form-control-2 {
+            width: 90px;
+            height: 32px;
+            margin: 8px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #152733;
+            border-radius: 4px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .form-control-3 {
+            width: 250px;
+            height: 32px;
+            margin: 8px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #152733;
+            border-radius: 4px;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .icon-container {
+            margin-bottom: 20px;
+            padding: 7px 0;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .button-group {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn {
+            width: 120px;
+            height: 40px;
+            margin: 15px;
+            padding: 5px;
+            font-Size: 18px;
+            border: 1px solid #152733;
+            border-radius: 4px;
+            color: #fff;
+            background-color: rgb(12, 7, 7);
+        }
+
+        .btn:hover {
+            background-color: #2c5774;
+            cursor: pointer;
+        }
+
+        .developer span{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="heading">
+            <i class="fa-solid fa-user"></i>
+            <h2>Application Form</h2>
+        </div>
+        <h3 class="subheading">Enter Your Details</h3> <br>
+        <div class="form-container">
+            <form action="#" class="form-contents">
+                <label for="fname">
+                    First Name : *<input type="text" class="form-control" placeholder="First Name" name="name" id="name"
+                        placeholder="Enter First your name" required>
+                </label>
+                <label for="lname">
+                    Last Name : *<input type="text" class="form-control" placeholder="Last Name" name="name" id="name"
+                        placeholder="Enter Last your name" required>
+                </label>
+                <label for="dob">
+                    Date of Birth : *<input type="date" class="form-control" name="mydob" id="mydob"
+                        placeholder="dd-mm-yyyy" required>
+                </label>
+                <label for="adhaar">
+                    Adhaar No : *<input type="number" class="form-control" name="myudai" id="myudai"
+                        placeholder="1111-2222-3333" required>
+                </label>
+                <label for="mypassword">
+                    Create Password : *<input type="password" class="form-control" placeholder="Create password"
+                        id="mypassword" placeholdername="mypassword" id="mypassword"
+                        placeholder="Must be at least 6 characters" required>
+                </label>
+                <label for="myemail">
+                    Email : *<input type="email" class="form-control" name="myemail" id="password"
+                        placeholder="Enter your email" required>
+                </label>
+                <fieldset class="fldgen">
+                    <legend>Gender : *</legend>
+                    <input type="radio" name="mygender" id="gender">Male
+                    <input type="radio" name="mygender" id="gender">Female
+                </fieldset>
+                <label for="mynumber">
+                    Mobile Number : *<input type="number" class="form-control" placeholder="Enter your Mobile Number"
+                        name="mynumber" id="mynumber">
+                </label>
+                <fieldset class="fldadd">
+                    <legend>Address : *</legend>
+                    <textarea name="address" cols=70%" rows="5" placeholder="Enter your address"></textarea>
+                </fieldset>
+                <fieldset class="fldgen">
+                    <legend> Your Level : *</legend>
+                    <input type="radio" name="mygender" id="gender">Student
+                    <input type="radio" name="mygender" id="gender">Employee
+                </fieldset>
+
+                <h3 class="subheading">Choose Topic to Learn</h3>
+
+                <label for="mychoices">
+                    <select name="mychoices" id="mychoices" class="course-options">
+                        <option value="Select Your Course" class="topic" selected>Select Your Course</option>Courses
+                        <option value="ReactNative" class="topic">ReactNative</option>
+                        <option value="MongoDB" class="topic">MongoDB</option>
+                        <option value="DJango" class="topic">DJango</option>
+                        <option value="Node.js" class="topic">Node.js</option>
+                        <option value="Express.js" class="topic">Express.js</option>
+                        <option value="Bootstrap" class="topic">Bootstrap</option>
+                    </select>
+                </label>
+
+                <h3 class="subheading">Education Details</h3>
+
+
+                <label for="schoolDetails">
+                    School Name : *<input type="text" class="form-control" name="myschool"
+                        placeholder="Enter Your School Name" required>
+                    Passing Year : *<input type="number" class="form-control-2" name="SchoolpassingYear" required>
+                    CGPA : *<input type="number" class="form-control-2" name="schoolcgpa" id="schoolcgpa"
+                        placeholder="(per/10)" required>
+                    Board :* <input type="text" class="form-control-2" name="SchoolBoard" id="SchoolBoard" required>
+                </label>
+                <label for="collegeDetails">
+                    College Name : *<input type="text" class="form-control" name="mycollege"
+                        placeholder="Enter Your College Name" required>
+                    Passing Year : *<input type="number" class="form-control-2" name="collegepassingYear" required>
+                    CGPA : *<input type="number" class="form-control-2" name="collegecgpa" id="collegecgpa"
+                        placeholder="(per/10)" required>
+                    Univ :* <input type="text" class="form-control-2" name="collegeuniversity" id="collegeuniversity"
+                        required>
+                    Branch : *
+                    <select name="mychoices" id="mychoices" class="course-options">
+                        <option value="Select Your Course" class="topic" selected>Select Your Branch</option>
+                        <option value="B.Tech Computer Science" class="topic">B.Tech Computer Science</option>
+                        <option value="B.Tech Electricals" class="topic">B.Tech Electricals</option>
+                        <option value="B.Tech Electronics and Communications" class="topic">B.Tech Electronics and
+                            Communications</option>
+                        <option value="B.Tech Mechanical" class="topic">B.Tech Mechanical</option>
+                        <option value="B.Tech Civil" class="topic">B.Tech Civil</option>
+                        <option value="B.Sc Information Technology" class="topic">B.Sc Information Technology</option>
+                    </select>
+                </label>
+
+                <h3 class="subheading">Job Details</h3>
+
+                <label for="companyname">
+                    Company Name : *<input type="text" class="form-control" placeholder="Company Name"
+                        name="companyname" id="companyname" required>
+                    Joining Year : *<input type="number" class="form-control-2" name="joiningYear" required>
+                    Post :* <input type="text" class="form-control-3" name="jobpost" id="jobpost" required> <br>
+                </label>
+
+                <h3 class="subheading">Payment Method</h3>
+                <!-- .............................................. -->
+                <label for="fname">
+                    Accepted Cards
+                    <div class="icon-container">
+                        <i class="fa fa-cc-visa" style="color:navy;"></i>
+                        <i class="fa fa-cc-amex" style="color:blue;"></i>
+                        <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                        <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                </label>
+                <label for="cname">
+                    Name on Card :* <input type="text" id="cname" name="cardname" placeholder="Name"
+                        class="form-control" required>
+                </label>
+                <label for="ccnum">
+                    Credit card number :*<input type="text" id="ccnum" name="cardnumber"
+                        placeholder="1111-2222-3333-4444" class="form-control" required>
+                </label>
+                <label for="expmonth">
+                    Exp Month :*<input type="text" id="expmonth" name="expmonth" placeholder="January"
+                        class="form-control-2" required>
+                </label>
+                <label for="expyear">
+                    Exp Year :* <input type="text" id="expyear" name="expyear" placeholder="2023" class="form-control-2"
+                        required>
+                </label>
+                <label for="cvv">
+                    CVV :* <input type="text" id="cvv" name="cvv" placeholder="352" class="form-control-2" required>
+                </label>
+                <div class="button-group">
+                    <button type="Submit" class="btn">Submit</button>
+                    <button type="Submit" class="btn">Reset</button>
+                </div>
+            </form>
+        </div>
+        <div class="developer">
+            <span>@anonymouskaish_1511</span>
+        </div>
+    </div>
+</body>
+</html>
